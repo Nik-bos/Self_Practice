@@ -1,0 +1,8 @@
+{
+  "python_version": "3.11",
+  "dependencies": ["."],
+  "graphs": {
+    "workflow": "Method_2:final_workflow"
+  },
+  "env": ".env"
+}

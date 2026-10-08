@@ -1,0 +1,92 @@
+												"Doubts and Hints"
+# Code:1
+class a:
+    def __init__(self):
+        print("This is a parent class")
+class b(a):
+    def disp(self):
+        print("This is a child class")
+        super().__init__()
+class c(b):
+    def disp1(self):
+        print("This is a child class 2")
+
+obj=c() # This is a parent class
+obj.disp1() # This is a child class 2
+
+# Output:
+	This is a parent class.
+	This is a child class 2.
+
+# Doubt: Why in the above code, class 'a' is always called?
+   
+# Answer: Here we have created an object of class 'c' and called its 'disp1' method, which will print :This is a child class 2". But we are getting "This is a parent class" first bcz on creating an object of class 'c', it automatically calls the constructor of its parent class which here is 'b'. But as 'b' had no constructor defined and as it inherits class 'a' it then calls the constructor of class 'a' and prints 'This is a parent class'.
+Then for 'obj.disp1' it calls 'disp1' method of class 'c' and prints 'This is a child class 2'. Hence, the output is:
+'This is a parent class
+ This is a child class 2'. 
+-----------------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Code:2
+
+class a:
+    def m1(self):
+        print("A")
+class b(a):
+    def m1(self):
+        print("B")
+        super().m1()
+class c(a):
+    def m1(self):
+        print("C")
+        super().m1()
+class d(b,c):
+    def m1(self):
+        print("D")
+        super().m1()
+
+obj=d()
+obj.m1()
+
+# Output: D,B,C,A
+
+# Doubt: Why here the output is D,B,C and A? Why not D,B and A?
+
+# Ans: The output of the given code is:
+
+
+Copy code
+D
+B
+C
+A
+
+Here's a step-by-step explanation of how the output is generated:
+
+1) The obj is an instance of the d class, so obj.ml() calls the ml method of class d.
+
+2) Inside d.ml(), the statement print("D") prints "D" to the console.
+
+3) The next statement super().ml() calls the ml method of the next class in the Method Resolution Order (MRO) after d. In this case, it is the ml method of class b.
+
+4) Inside b.ml(), the statement print("B") prints "B" to the console.
+
+5) The next statement super().ml() calls the ml method of the next class in the MRO after b. In this case, it is the ml method of class c.
+
+6) Inside c.ml(), the statement print("C") prints "C" to the console.
+
+7) The next statement super().ml() calls the ml method of the next class in the MRO after c. In this case, it is the ml method of class a.
+
+8) Inside a.ml(), the statement print("A") prints "A" to 
+the console.
+
+9) The MRO for class d is d -> b -> c -> a. So, when the super() function is called inside the ml methods, it follows this order to call the next ml method in the chain.
+
+Thus, the output of the code is D B C A.
+------------------------------------------------------------------------------------------------------------------------------------------------
+
+# Hint: Upon creating a object of any class, it first checks whether there is any constructor present in its parent class or not. If present, the constructor gets executed.
+Moreover, if constructor is not defined in parent class and supose parent class is inherited from some other class means parent class has its further parent class and if constructor is defined in that particular parent class then from there constructor gets executed.
+
+In short, upon creating an object of a class, constructor of its parent class always gets executed automatically.
+---------------------------------------------------------------------------------------------------------------------------------------------------
+

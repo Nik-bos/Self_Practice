@@ -1,0 +1,34 @@
+{
+  "items": [
+    {
+      "headline": "Google News",
+      "url": "https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN%3Aen",
+      "news_agency": "Google News",
+      "summary": "Iran-Israel conflict sees Israel launching airstrikes on Lebanese capital after Hezbollah's missile strikes. This development follows heightened tensions and hostilities in the region."
+    },
+    {
+      "headline": "India Today: Latest News, Breaking News Today - Entertainment ...",
+      "url": "https://www.indiatoday.in/",
+      "news_agency": "India Today",
+      "summary": "Recent unrest in Pakistan escalates as the Taliban targets the Nur Khan base, which was recently repaired. This has implications for regional security and stability."
+    },
+    {
+      "headline": "India | Latest News & Updates - BBC",
+      "url": "https://www.bbc.com/news/world/asia/india",
+      "news_agency": "BBC",
+      "summary": "India's cricket team advances to the T20 World Cup semi-finals after clinching a victory over West Indies, highlighted by Sanju Samson's impressive batting performance."
+    },
+    {
+      "headline": "India news - breaking news, video and headlines and opinion | CNN",
+      "url": "https://www.cnn.com/world/india",
+      "news_agency": "CNN",
+      "summary": "Bangladesh faces unrest following the death of a student leader, while China continues its ambitious hydropower projects in the Himalayas, stirring regional attention."
+    },
+    {
+      "headline": "Latest News Today: Breaking News and Top Headlines from India ...",
+      "url": "https://indianexpress.com/",
+      "news_agency": "Indian Express",
+      "summary": "A recent airstrike in Lebanon leads to significant casualties, while concerns grow within the Indian diaspora amidst the escalating conflicts abroad."
+    }
+  ]
+}

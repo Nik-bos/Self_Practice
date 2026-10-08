@@ -1,0 +1,39 @@
+﻿# 1. Ignore everything by default
+*
+
+# 2. Let Git look inside every folder (keeps your structure)
+!*/
+
+# 3. Allow only these file types
+# Python code
+!*.py
+!*.ipynb
+# Datasets
+!*.csv
+!*.tsv
+!*.xlsx
+!*.xls
+!*.json
+!*.parquet
+# Documents and text
+!*.docx
+!*.doc
+!*.txt
+!*.md
+!.gitignore
+
+# 4. Folders to skip completely (must stay below the allow rules)
+CampusX Notes/
+manim-mcp-server/
+.ipynb_checkpoints/
+.virtual_documents/
+__pycache__/
+venv/
+.venv/
+env/
+node_modules/
+site-packages/
+Model_Context_Protocol/
+
+# 5. Big dataset that was already excluded
+Machine Learning/47 Day 47 - Principle Component Analysis/00 Digit Recognizer.csv
