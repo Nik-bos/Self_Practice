@@ -34,7 +34,7 @@ env/
 node_modules/
 site-packages/
 Model_Context_Protocol/
+DSMP/Machine Learning/Notes/
 
 # 5. Big dataset that was already excluded
 Machine Learning/47 Day 47 - Principle Component Analysis/00 Digit Recognizer.csv
-!DSMP/Machine Learning/Notes/Hand Written Notes/*.pdf
